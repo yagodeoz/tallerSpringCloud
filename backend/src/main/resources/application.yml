@@ -19,3 +19,15 @@ spring:
          service-id: CONFIGURATION
          enabled: true
        fail-fast: true
+       
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+
+info:
+  app:
+    name: Backend
+    description: Servicio cliente de servidor de configuracion
+    version: 1.0.0
